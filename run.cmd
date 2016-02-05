@@ -1,0 +1,1 @@
+java -Xss64m -cp . Solver "D:\\Installed\\Steam\\userdata\\35509631\\760\\remote\\210970\\screenshots" "D:\\!Fun\\cv\\witness-challenge\\out\\"
