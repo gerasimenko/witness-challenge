@@ -8,10 +8,14 @@ Program has two parameters: your screenshot folder, where Steam puts screenshots
 When running, it checks every second for new screenshot, if found, tries to find puzzle on it and solve.
 
 Build command:
-`javac Solver.java`
+```
+javac Solver.java
+```
 
 Run command:
-`java -Xss64m -cp . Solver "STEAM\SCREENSHOT\DIRECTORY\" "OUTPUT\DIRECTORY\"`
+```
+java -Xss64m -cp . Solver "STEAM\SCREENSHOT\DIRECTORY\" "OUTPUT\DIRECTORY\"
+```
 
 Program has infinity cycle inside, so just stop it manually, when you finish.
 
