@@ -95,6 +95,7 @@ public class Solver {
                     regions[visited[x][y]].addPoint(x, y);
                 }
 
+            boolean puzzleFound = false;
             for(int i = 0; i < regions.length; i++) {
                 regions[i].calcStats();
                 if (regions[i].isPuzzle()) {
@@ -126,10 +127,14 @@ public class Solver {
                     extractor.drawPath(image, solution);
                     extractor.drawPath(colorImage, solution);
                     Utils.saveImage(solutionPath, image);
-
+                    puzzleFound = true;
                 }
             }
             System.out.println("============================");
+
+            if(puzzleFound == false) {
+                Utils.saveImage(solutionPath, image);
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

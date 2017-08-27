@@ -14,7 +14,7 @@ javac Solver.java
 
 Run command:
 ```
-java -Xss64m -cp . Solver "STEAM\\SCREENSHOT\\DIRECTORY\\" "OUTPUT\\DIRECTORY\\"
+java -Xss128m -cp . Solver "STEAM\\SCREENSHOT\\DIRECTORY\\" "OUTPUT\\DIRECTORY\\"
 ```
 **Use double backslashes in your paths**
 
